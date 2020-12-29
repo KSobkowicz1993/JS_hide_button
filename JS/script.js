@@ -27,22 +27,27 @@
 // //     btn5.style.visibility = "hidden";
 // }
 
+// const tab = document.querySelectorAll('button');
+
+// // for (let i=0; i<tab.length; i++) {
+
+// //     console.log(tab[i]);
+
+// //     tab[i].addEventListener("click", () => {
+
+// //         console.log("Kliknęłam button");
+// //         tab[i].style.visibility = "hidden";
+
+// //     });
+// // }
+
 const tab = document.querySelectorAll('button');
 
-for (let i=0; i<tab.length; i++) {
+tab.forEach((e) => {
 
-    console.log(tab[i]);
-    
-    tab[i].addEventListener("click", () => {
-
+    e.addEventListener("click", () => {
+        
         console.log("Kliknęłam button");
-        tab[i].style.visibility = "hidden";
-
+        e.style.visibility = "hidden";
     });
-}
-  
-  
-
-
-
-
+});
